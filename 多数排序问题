@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+  int i,j,k;
+  printf("\n");
+  for(i=1;i<5;i++) /*以下为三重循环*/
+    for(j=1;j<5;j++)
+      for (k=1;k<5;k++)
+      {
+        if (i!=k&&i!=j&&j!=k) /*确保i、j、k三位互不相同*/
+        printf("%d,%d,%d\n",i,j,k);
+      }
+  return 0;
+}
+————————————————
+版权声明：本文为CSDN博主「Bank_Lei」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_41657977/article/details/84891328
